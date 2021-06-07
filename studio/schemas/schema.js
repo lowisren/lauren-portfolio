@@ -10,6 +10,13 @@ import category from './category'
 import post from './post'
 import author from './author'
 import project from './project'
+import page from './page'
+import navigation from './navigation'
+import siteSettings from './siteSettings'
+// Object types
+import navItem from "./objects/navItem";
+import link from "./objects/link";
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,8 +31,13 @@ export default createSchema({
     author,
     category,
     project,
+    page,
+    navigation,
+    siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
+    navItem,
+    link,
   ]),
 })
